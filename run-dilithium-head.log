@@ -1,108 +1,24 @@
->>>>crypto_sign
->>>>dilithium2-head
->>>>crypto_sign_dilithium2-head
->>>>/ref
->>>>
->>>>
->>>>
-=== seg 01 mai 2023 14:06:00 WEST === starting
-=== seg 01 mai 2023 14:06:00 WEST === amd64 crypto_sign/dilithium2-head
-=== seg 01 mai 2023 14:06:00 WEST === amd64 crypto_sign/dilithium2-head/ref timingleaks
-=== seg 01 mai 2023 14:06:00 WEST === amd64 crypto_sign/dilithium2-head/ref timingleaks clang -march=native -O3 -fomit-frame-pointer -fwrapv -Qunused-arguments -fPIC -fPIE
-=== seg 01 mai 2023 14:06:01 WEST === amd64 crypto_sign/dilithium2-head timingleaks measuring
-=== seg 01 mai 2023 14:06:02 WEST === finishing
-=== seg 01 mai 2023 14:06:02 WEST === database size for this run:   1946  46546 286425 __/__
+ok crypto_sign/dilithium2-head/ref
+ok crypto_sign/dilithium2-head/avx2
+ok crypto_sign/dilithium3-head/ref
+ok crypto_sign/dilithium3-head/avx2
+ok crypto_sign/dilithium5-head/ref
+ok crypto_sign/dilithium5-head/avx2
 
-crypto_sign/dilithium2-head/ref:
-4797f974ea6e9e7fd018abbaf70efe2f1d10f6c2e6b172c55f371f0793ec3929
-af8d681c38c8e87509d97b304f7141fdd6ada77941d77c5b6e2057b24dd33d6e
->>>>crypto_sign
->>>>dilithium2-head
->>>>crypto_sign_dilithium2-head
->>>>/avx2
->>>>
->>>>
->>>>
-=== seg 01 mai 2023 14:06:02 WEST === starting
-=== seg 01 mai 2023 14:06:02 WEST === amd64 crypto_sign/dilithium2-head
-=== seg 01 mai 2023 14:06:02 WEST === amd64 crypto_sign/dilithium2-head/avx2 timingleaks
-=== seg 01 mai 2023 14:06:02 WEST === amd64 crypto_sign/dilithium2-head/avx2 timingleaks clang -march=native -O3 -fomit-frame-pointer -fwrapv -Qunused-arguments -fPIC -fPIE
-=== seg 01 mai 2023 14:06:03 WEST === amd64 crypto_sign/dilithium2-head timingleaks measuring
-=== seg 01 mai 2023 14:06:04 WEST === finishing
-=== seg 01 mai 2023 14:06:04 WEST === database size for this run:   1946  46546 281460 __/__
+name: Dilithium2
+type: sign
+checksumsmall: 4797f974ea6e9e7fd018abbaf70efe2f1d10f6c2e6b172c55f371f0793ec3929
+checksumbig: af8d681c38c8e87509d97b304f7141fdd6ada77941d77c5b6e2057b24dd33d6e
 
-crypto_sign/dilithium2-head/avx2:
-4797f974ea6e9e7fd018abbaf70efe2f1d10f6c2e6b172c55f371f0793ec3929
-af8d681c38c8e87509d97b304f7141fdd6ada77941d77c5b6e2057b24dd33d6e
->>>>crypto_sign
->>>>dilithium3-head
->>>>crypto_sign_dilithium3-head
->>>>/ref
->>>>
->>>>
->>>>
-=== seg 01 mai 2023 14:06:04 WEST === starting
-=== seg 01 mai 2023 14:06:04 WEST === amd64 crypto_sign/dilithium3-head
-=== seg 01 mai 2023 14:06:04 WEST === amd64 crypto_sign/dilithium3-head/ref timingleaks
-=== seg 01 mai 2023 14:06:04 WEST === amd64 crypto_sign/dilithium3-head/ref timingleaks clang -march=native -O3 -fomit-frame-pointer -fwrapv -Qunused-arguments -fPIC -fPIE
-=== seg 01 mai 2023 14:06:04 WEST === amd64 crypto_sign/dilithium3-head timingleaks measuring
-=== seg 01 mai 2023 14:06:07 WEST === finishing
-=== seg 01 mai 2023 14:06:07 WEST === database size for this run:   1946  46546 287308 __/__
 
-crypto_sign/dilithium3-head/ref:
-8fed102356f42bb67b7985054fba3b4e3df57b5af642315f7287150e57fa5f2c
-cfb61892e871497fe67395031e8376fbabd2468ff8046e28abab71fa0fd5ba34
->>>>crypto_sign
->>>>dilithium3-head
->>>>crypto_sign_dilithium3-head
->>>>/avx2
->>>>
->>>>
->>>>
-=== seg 01 mai 2023 14:06:07 WEST === starting
-=== seg 01 mai 2023 14:06:07 WEST === amd64 crypto_sign/dilithium3-head
-=== seg 01 mai 2023 14:06:07 WEST === amd64 crypto_sign/dilithium3-head/avx2 timingleaks
-=== seg 01 mai 2023 14:06:07 WEST === amd64 crypto_sign/dilithium3-head/avx2 timingleaks clang -march=native -O3 -fomit-frame-pointer -fwrapv -Qunused-arguments -fPIC -fPIE
-=== seg 01 mai 2023 14:06:07 WEST === amd64 crypto_sign/dilithium3-head timingleaks measuring
-=== seg 01 mai 2023 14:06:08 WEST === finishing
-=== seg 01 mai 2023 14:06:08 WEST === database size for this run:   1946  46546 282365 __/__
+name: Dilithium3
+type: sign
+checksumsmall: 8fed102356f42bb67b7985054fba3b4e3df57b5af642315f7287150e57fa5f2c
+checksumbig: cfb61892e871497fe67395031e8376fbabd2468ff8046e28abab71fa0fd5ba34
 
-crypto_sign/dilithium3-head/avx2:
-8fed102356f42bb67b7985054fba3b4e3df57b5af642315f7287150e57fa5f2c
-cfb61892e871497fe67395031e8376fbabd2468ff8046e28abab71fa0fd5ba34
->>>>crypto_sign
->>>>dilithium5-head
->>>>crypto_sign_dilithium5-head
->>>>/ref
->>>>
->>>>
->>>>
-=== seg 01 mai 2023 14:06:08 WEST === starting
-=== seg 01 mai 2023 14:06:08 WEST === amd64 crypto_sign/dilithium5-head
-=== seg 01 mai 2023 14:06:08 WEST === amd64 crypto_sign/dilithium5-head/ref timingleaks
-=== seg 01 mai 2023 14:06:08 WEST === amd64 crypto_sign/dilithium5-head/ref timingleaks clang -march=native -O3 -fomit-frame-pointer -fwrapv -Qunused-arguments -fPIC -fPIE
-=== seg 01 mai 2023 14:06:09 WEST === amd64 crypto_sign/dilithium5-head timingleaks measuring
-=== seg 01 mai 2023 14:06:12 WEST === finishing
-=== seg 01 mai 2023 14:06:12 WEST === database size for this run:   1946  46546 288289 __/__
 
-crypto_sign/dilithium5-head/ref:
-b1fd5d7815befbe9a254f4d3fd274f90f8b5f3ad245e33e9d4f88c5cdb925af2
-a492c5079d70c6d64d10361830fb5367b990346d7778dc35ebc1127749946c09
->>>>crypto_sign
->>>>dilithium5-head
->>>>crypto_sign_dilithium5-head
->>>>/avx2
->>>>
->>>>
->>>>
-=== seg 01 mai 2023 14:06:12 WEST === starting
-=== seg 01 mai 2023 14:06:12 WEST === amd64 crypto_sign/dilithium5-head
-=== seg 01 mai 2023 14:06:12 WEST === amd64 crypto_sign/dilithium5-head/avx2 timingleaks
-=== seg 01 mai 2023 14:06:12 WEST === amd64 crypto_sign/dilithium5-head/avx2 timingleaks clang -march=native -O3 -fomit-frame-pointer -fwrapv -Qunused-arguments -fPIC -fPIE
-=== seg 01 mai 2023 14:06:12 WEST === amd64 crypto_sign/dilithium5-head timingleaks measuring
-=== seg 01 mai 2023 14:06:13 WEST === finishing
-=== seg 01 mai 2023 14:06:13 WEST === database size for this run:   1946  46546 285859 __/__
+name: Dilithium5
+type: sign
+checksumsmall: b1fd5d7815befbe9a254f4d3fd274f90f8b5f3ad245e33e9d4f88c5cdb925af2
+checksumbig: a492c5079d70c6d64d10361830fb5367b990346d7778dc35ebc1127749946c09
 
-crypto_sign/dilithium5-head/avx2:
-b1fd5d7815befbe9a254f4d3fd274f90f8b5f3ad245e33e9d4f88c5cdb925af2
-a492c5079d70c6d64d10361830fb5367b990346d7778dc35ebc1127749946c09

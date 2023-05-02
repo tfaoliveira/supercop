@@ -1,3 +1,16 @@
+# dilithium
+## notes
+1. folders `submodules/pq-crystals/dilithium-patch/{ref,avx2}` contain a Makefile that allows to compile several static libraries (make static) for submodule `submodules/pq-crystals/dilithium`:
+  * after a submodule update, these Makefiles should be checked for compatibility with the updated version of dilithium and adjusted if needed; (PR with static rule to pq-crystals);
+  * after checking this, copy them into the corresponding folder `submodules/pq-crystals/dilithium`.
+
+2. running `$ ./patch-dilithium-head` will compile different static libraries (Dilithium{2,3,5}) by invoking previously mentioned `Makefile` and then copy them into the corresponding folder under `supercop/crypto_sign`: `supercop/crypto_sign/dilithium{2,3,5}-head/{ref,avx2}`;
+
+3. double check that the `api.h` files in `supercop/crypto_sign/dilithium{2,3,5}-head/{ref,avx2}` are still valid and define the parameters accordingly; the current status does not support automatic syncing of `api.h` files; (PR for this);
+
+4. `$ ./run-dilithium-head` runs supercop for the `dilithium*-head` implementations and produces file `run-dilithium-head.log` with the status of the run (greps for the `try` keyword in bench/*/data and prints the field that corresponds to `ok` or `fails` and the implementation name; after that, it prints the checked checksums in a format compatible to the ones used in libjade.
+
+
 # base-20221122 
 ## notes
 branch `base-20221122` defines the following changes:

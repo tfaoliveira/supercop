@@ -1,12 +1,33 @@
 #!/bin/bash
 
+log=run-dilithium-head.log
+
+# run tests (and bench) for dilithium{2,3,5}/{ref,avx2} from pq-crystals
+echo -n "" > $log
 for param in 2 3 5
 do
   for implementation in ref avx2
   do
     ./do-part crypto_sign dilithium${param}-head $implementation
     echo -e "\ncrypto_sign/dilithium${param}-head/${implementation}:"
-    grep " try " $(find bench/ -name data) ###| cut -d' ' -f8 | tr '/' '\n'
+    grep " try " $(find bench/ -name data) | cut -d' ' -f9,13 >> $log
   done
+done
+
+# print checksums in a an friendly format
+echo -n "" >> $log
+for param in 2 3 5
+do
+  checksumsmall=$(cat crypto_sign/dilithium${param}-head/checksumsmall)
+  checksumbig=$(cat crypto_sign/dilithium${param}-head/checksumbig)
+
+cat <<END >> $log
+
+name: Dilithium$param
+type: sign
+checksumsmall: $checksumsmall
+checksumbig: $checksumbig
+
+END
 done
 
