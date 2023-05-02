@@ -1,0 +1,5 @@
+#include "api-libjade.h"
+
+#define CRYPTO_PUBLICKEYBYTES   1952
+#define CRYPTO_SECRETKEYBYTES   4000
+#define CRYPTO_BYTES            3293

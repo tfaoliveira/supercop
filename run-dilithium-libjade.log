@@ -1,0 +1,6 @@
+fails-checksumbig crypto_sign/dilithium2-head/libjade-ref
+fails-checksumbig crypto_sign/dilithium2-head/libjade-avx2
+ok crypto_sign/dilithium3-head/libjade-ref
+ok crypto_sign/dilithium3-head/libjade-avx2
+fails-checksumbig crypto_sign/dilithium5-head/libjade-ref
+fails-checksumbig crypto_sign/dilithium5-head/libjade-avx2

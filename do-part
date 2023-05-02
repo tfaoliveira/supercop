@@ -776,7 +776,7 @@ do
 
               [ x"$expectedchecksumsmall" != x ] \
               && [ x"$expectedchecksumsmall" != "x$checksumsmall" ] \
-              && echo "$version $shorthostname $abi $startdate $o $p/$security try $checksumsmall fails $cycles $checksumcycles $cyclespersecond $impl $compilerword" >&5 \
+              && echo "$version $shorthostname $abi $startdate $o $p/$security try $checksumsmall fails-checksumsmall $cycles $checksumcycles $cyclespersecond $impl $compilerword" >&5 \
               && continue
 
               # patch : $libpath $liblink ... $lstlink
@@ -817,7 +817,7 @@ do
 
               [ x"$expectedchecksumbig" != x ] \
               && [ x"$expectedchecksumbig" != "x$checksumbig" ] \
-              && echo "$version $shorthostname $abi $startdate $o $p/$security try $checksumbig fails $cycles $checksumcycles $cyclespersecond $impl $compilerword" >&5 \
+              && echo "$version $shorthostname $abi $startdate $o $p/$security try $checksumbig fails-checksumbig $cycles $checksumcycles $cyclespersecond $impl $compilerword" >&5 \
               && continue
 
               checksumok=ok

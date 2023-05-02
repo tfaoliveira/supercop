@@ -1,0 +1,23 @@
+#!/bin/bash
+
+basedir=submodules/formosa-crypto/libjade/src/crypto_sign/dilithium
+
+## compile
+for param in 2 3 5
+do
+  for implementation in ref avx2
+  do
+    # pq-crystals and libjade implementations live under the same folder as
+    # they should produce the same results
+    mkdir -p crypto_sign/dilithium${param}-head/libjade-$implementation/
+
+    make -C $basedir/dilithium$param/amd64/$implementation/ sign.s
+
+    cp $basedir/dilithium$param/amd64/$implementation/sign.s \
+       crypto_sign/dilithium${param}-head/libjade-$implementation/
+
+    cp $basedir/dilithium$param/amd64/$implementation/include/api.h \
+       crypto_sign/dilithium${param}-head/libjade-$implementation/api-libjade.h
+  done
+done
+
