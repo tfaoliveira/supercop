@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for param in 2 3 5
+do
+  for implementation in ref avx2
+  do
+    ./do-part crypto_sign dilithium${param}-head $implementation
+    echo -e "\ncrypto_sign/dilithium${param}-head/${implementation}:"
+    grep " try " $(find bench/ -name data) ###| cut -d' ' -f8 | tr '/' '\n'
+  done
+done
+

@@ -1,0 +1,3 @@
+[submodule "submodules/pq-crystals/dilithium"]
+	path = submodules/pq-crystals/dilithium
+	url = https://github.com/pq-crystals/dilithium.git

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+basedir=submodules/pq-crystals/dilithium
+
+## compile
+for implementation in ref avx2
+do
+  make -C $basedir/$implementation/ clean
+  mv $basedir/$implementation/randombytes.c $basedir/$implementation/randombytes.backup
+  touch $basedir/$implementation/randombytes.c
+  make -C $basedir/$implementation/ static
+  mv $basedir/$implementation/randombytes.backup $basedir/$implementation/randombytes.c
+done
+
+## copy *.a libraries
+for param in 2 3 5
+do
+  for implementation in ref avx2
+  do
+    srcdir=$basedir/$implementation
+    destdir=crypto_sign/dilithium${param}-head/$implementation
+
+    cp $srcdir/libpqcrystals_dilithium${param}_$implementation.a \
+       $destdir/
+
+  done
+done
+
+
+
